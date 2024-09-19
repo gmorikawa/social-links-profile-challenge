@@ -1,0 +1,104 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: hsl(75, 94%, 57%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-grey-700: hsl(0, 0%, 20%);
+    --color-grey-800: hsl(0, 0%, 12%);
+    --color-grey-900:hsl(0, 0%, 8%);
+
+    --typography-h1: 2rem;
+    --typography-paragraph: 1.4rem;
+
+    --spacing-small: .9rem;
+    --spacing-medium: 1.5rem;
+    --spacing-large: 2rem;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: var(--color-white);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-size: var(--typography-h1);
+}
+
+.main-container {
+    position: relative;
+    height: 100vh;
+    background-color: var(--color-grey-900);
+}
+
+.card-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 2.5rem;
+    border-radius: .5rem;
+
+    background-color: var(--color-grey-800);
+
+    min-width: 28rem;
+}
+
+.profile {
+    text-align: center;
+}
+
+#user-avatar {
+    background-image: url(/assets/images/avatar-jessica.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 7rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+
+    margin: 0 auto;
+    margin-bottom: var(--spacing-large);
+    margin-top: var(--spacing-small);
+}
+
+#user-name {
+    margin-bottom: var(--spacing-small);
+}
+
+#user-location {
+    margin-bottom: var(--spacing-large);
+
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+#user-bio {
+    margin-bottom: var(--spacing-medium);
+}
+
+.button {
+    background-color: var(--color-grey-700);
+    text-align: center;
+
+    border-radius: .4rem;
+    padding: var(--spacing-small);
+
+    font-weight: 700;
+}
+
+#social-networking-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-small);
+}
