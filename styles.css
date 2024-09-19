@@ -93,7 +93,7 @@ h1 {
 }
 
 #user-avatar {
-    background-image: url(/assets/images/avatar-jessica.jpeg);
+    background-image: url(./assets/images/avatar-jessica.jpeg);
     background-position: center;
     background-size: cover;
     width: 7rem;
